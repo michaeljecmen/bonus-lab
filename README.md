@@ -11,11 +11,13 @@ Mosey on over to the replit (linked above), hit "fork", then "view files". Alter
 
 Each file is intended to be a separate demo. Compile each file as you use and edit it with the provided makefile. I would suggest walking through the examples in main() for each file, uncommenting the print statements and asking students to guess what the output at relevant lines will be before running.
 
-Brief descriptions of each file:
+Brief description of each file:
 * ```copy.cpp```: custom vector class which showcases the need for move semantics
 * ```move.cpp```: to be demoed after ```copy.cpp```. same vector class, but with move semantics implemented
+* ```quiz.cpp```: move semantics quiz (guess the output)
 * ```shared.cpp```: std::shared_ptr demo
 * ```unique.cpp```: std::unique_ptr demo
 * ```functional.cpp```: demo of std::functional capabilities, with std::bind, std::placeholders, and std::ref
 * ```variadic.cpp```: basic variadic arguments print function
 * ```virtual.cpp```: polymorphic virtual function calls
+* ```singleton.cpp```: singleton creational pattern demo
