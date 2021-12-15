@@ -13,4 +13,9 @@ Each file is intended to be a separate demo. Compile each file as you use and ed
 
 Brief descriptions of each file:
 * ```copy.cpp```: custom vector class which showcases the need for move semantics
-* ```move.cpp```: 
+* ```move.cpp```: to be demoed after ```copy.cpp```. same vector class, but with move semantics implemented
+* ```shared.cpp```: std::shared_ptr demo
+* ```unique.cpp```: std::unique_ptr demo
+* ```functional.cpp```: demo of std::functional capabilities, with std::bind, std::placeholders, and std::ref
+* ```variadic.cpp```: basic variadic arguments print function
+* ```virtual.cpp```: polymorphic virtual function calls
