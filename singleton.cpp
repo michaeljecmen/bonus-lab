@@ -134,7 +134,16 @@ struct SingletonDestroyer {
 };
 
 // two necessary evils of this approach
+// one: static member variables must be initialized out of line.
+// if you were writing the class declaration in a .hpp file and the
+// definition in a .cpp file, you'd put this line in the .cpp file.
 Singleton* Singleton::instance = nullptr;
+
+// same with this line. this must be a filescope variable, because we
+// want this object (and thus our singleton pointer) to only be cleaned
+// up when the program itself ends. because filescope globals are not 
+// destructed until the end of the program, this is where the object 
+// must live. this should also exist in a .cpp file.
 SingletonDestroyer destroyer;
 
 // int main() {
